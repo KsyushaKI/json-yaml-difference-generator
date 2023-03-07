@@ -14,10 +14,14 @@ def read(file_path):
 
 
 def test_finding_different():
-    file_path1 = get_fixture_path('file1.json')
-    file_path2 = get_fixture_path('file2.json')
-    result_file_path = get_fixture_path('result.txt')
-    correct_result_data = read(result_file_path)
-    function_result = generate_diff(file_path1, file_path2)
+    jsone_path1 = get_fixture_path('file1.json')
+    jsone_path2 = get_fixture_path('file2.json')
+    yml_path1 = get_fixture_path('file1.yml')
+    yml_path2 = get_fixture_path('file2.yml')
 
-    assert function_result == correct_result_data
+    correct_result_data = read(get_fixture_path('result.txt'))
+    function_result_with_json = generate_diff(jsone_path1, jsone_path2)
+    function_result_with_yml = generate_diff(yml_path1, yml_path2)
+
+    assert function_result_with_json == correct_result_data
+    assert function_result_with_yml == correct_result_data

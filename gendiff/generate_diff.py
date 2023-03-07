@@ -1,4 +1,12 @@
 import json
+import yaml
+
+
+def convert_json_yaml_to_python(file_path):
+    if file_path.endswith('.json'):
+        return json.load(open(file_path))
+    elif file_path.endswith('.yml') or file_path.endswith('.yaml'):
+        return yaml.load(open(file_path), yaml.SafeLoader)
 
 
 def find_diff(dict1, dict2):
@@ -18,7 +26,7 @@ def find_diff(dict1, dict2):
     return dict3
 
 
-def python_value_to_json_value(value):
+def python_boolean_to_json_yaml_bolean(value):
     if value is True:
         return 'true'
     if value is False:
@@ -35,7 +43,7 @@ def stringify(value, replacer=' ', spases_count=2):
 
     def dict_to_str(value, level):
         for k, v in value.items():
-            v = python_value_to_json_value(v)
+            v = python_boolean_to_json_yaml_bolean(v)
             if not isinstance(v, dict):
                 dict_.append(f'{predicate * level}{k}: {v}')
             elif isinstance(v, dict):
@@ -49,8 +57,8 @@ def stringify(value, replacer=' ', spases_count=2):
 
 
 def generate_diff(file_path1, file_path2):
-    dict1 = json.load(open(file_path1))
-    dict2 = json.load(open(file_path2))
+    dict1 = convert_json_yaml_to_python(file_path1)
+    dict2 = convert_json_yaml_to_python(file_path2)
     dict3 = find_diff(dict1, dict2)
 
     return stringify(dict3)
