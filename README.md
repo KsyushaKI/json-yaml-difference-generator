@@ -8,3 +8,12 @@
 
 [![Test 
 Coverage](https://api.codeclimate.com/v1/badges/25417aba0aa43f3881d8/test_coverage)](https://codeclimate.com/github/KsyushaKI/python-project-50/test_coverage)
+
+
+1.Step 3 
+
+[![asciicast](https://asciinema.org/a/566046.svg)](https://asciinema.org/a/566046)
+
+2. Step 6
+
+[![asciicast](https://asciinema.org/a/566040.svg)](https://asciinema.org/a/566040)
