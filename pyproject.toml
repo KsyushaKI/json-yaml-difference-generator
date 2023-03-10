@@ -9,7 +9,6 @@ packages = [{include = "gendiff"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 pyyaml = "^6.0"
-pathlib = "^1.0.1"
 
 [tool.poetry.scripts]
 gendiff = "gendiff.scripts.gendiff:main"

@@ -21,13 +21,18 @@ def test_finding_different():
 
     result_stylish = read(get_fixture_path('result_stylish.txt'))
     result_plain = read(get_fixture_path('result_plain.txt'))
+    result_json = read(get_fixture_path('result_json.txt'))
 
     stylish_result_with_json = generate_diff(jsone_path1, jsone_path2)
     stylish_result_with_yml = generate_diff(yml_path1, yml_path2)
     plain_result_with_json = generate_diff(jsone_path1, jsone_path2, 'plain')
     plain_result_with_yml = generate_diff(yml_path1, yml_path2, 'plain')
+    json_result_with_json = generate_diff(jsone_path1, jsone_path2, 'json')
+    json_result_with_yml = generate_diff(yml_path1, yml_path2, 'json')
 
     assert stylish_result_with_json == result_stylish
     assert stylish_result_with_yml == result_stylish
     assert plain_result_with_json == result_plain
     assert plain_result_with_yml == result_plain
+    assert json_result_with_json == result_json
+    assert json_result_with_yml == result_json
