@@ -19,9 +19,15 @@ def test_finding_different():
     yml_path1 = get_fixture_path('file1.yml')
     yml_path2 = get_fixture_path('file2.yml')
 
-    correct_result_data = read(get_fixture_path('result.txt'))
-    function_result_with_json = generate_diff(jsone_path1, jsone_path2)
-    function_result_with_yml = generate_diff(yml_path1, yml_path2)
+    result_stylish = read(get_fixture_path('result_stylish.txt'))
+    result_plain = read(get_fixture_path('result_plain.txt'))
 
-    assert function_result_with_json == correct_result_data
-    assert function_result_with_yml == correct_result_data
+    stylish_result_with_json = generate_diff(jsone_path1, jsone_path2)
+    stylish_result_with_yml = generate_diff(yml_path1, yml_path2)
+    plain_result_with_json = generate_diff(jsone_path1, jsone_path2, 'plain')
+    plain_result_with_yml = generate_diff(yml_path1, yml_path2, 'plain')
+
+    assert stylish_result_with_json == result_stylish
+    assert stylish_result_with_yml == result_stylish
+    assert plain_result_with_json == result_plain
+    assert plain_result_with_yml == result_plain

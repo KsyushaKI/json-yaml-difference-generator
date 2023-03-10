@@ -14,6 +14,10 @@ Coverage](https://api.codeclimate.com/v1/badges/25417aba0aa43f3881d8/test_covera
 
 [![asciicast](https://asciinema.org/a/566046.svg)](https://asciinema.org/a/566046)
 
-2. Step 6
+2. Step 6: Stylish
 
 [![asciicast](https://asciinema.org/a/566040.svg)](https://asciinema.org/a/566040)
+
+3. Step 7: Plain
+
+[![asciicast](https://asciinema.org/a/566251.svg)](https://asciinema.org/a/566251)
