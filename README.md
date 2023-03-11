@@ -15,8 +15,8 @@ Utility features:
 How to install and use:
 - To install the package dependencies, run command <b>make install</b>.<br>
 - To install the package in your system, run <b>make package-install</b> command. After that, you can run the utility using the <b>gendiff</b> 
-command.<br><br>
-- For know info about <b>gendiff</b><br> utility run <b>gendiff -h</b><br> command
+command.<br>
+- For know info about <b>gendiff</b> utility run <b>gendiff -h</b> command.<br>
 - To calculate the difference you need to specify two paths to files: <b>gendiff file1.json file2.json</b><br>
 - By default, the output is displayed in 'stylish' style, but you can also choose 'plain' or 'json': <b>gendiff -f plain file1.json file2.json</b><br>
 
