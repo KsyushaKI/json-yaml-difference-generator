@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Difference calculator is a program that determines the difference between two data structures"
 authors = ["KsyushaKI <oksanaakadem39@gmail.com>"]
 readme = "README.md"
 packages = [{include = "gendiff"}]
