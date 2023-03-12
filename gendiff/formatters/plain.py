@@ -1,4 +1,5 @@
 from gendiff.formatters.bool_to_str import bool_to_str
+from gendiff.help_tools.data_parser import COMMON, ADD, REMOVE
 
 
 def get_plain_formated_value(value):
@@ -45,17 +46,17 @@ def plain(data):
 
     def dict_to_str(data, start_path=[]):
         for key, value in data.items():
-            orig_key = key[2:]
+            orig_key = key[len(ADD):]
             path = start_path + [orig_key]
             messages = message_format(path, value, data.get(f"+ {orig_key}"))
 
-            if key.startswith(('  ')) and isinstance(value, dict):
+            if key.startswith(COMMON) and isinstance(value, dict):
                 dict_to_str(value, path)
-            elif key.startswith(('- ')) and f"+ {orig_key}" in data:
+            elif key.startswith(REMOVE) and f"{ADD}{orig_key}" in data:
                 result.append(get_updated(messages))
-            elif key.startswith(('- ')) and f"+ {orig_key}" not in data:
+            elif key.startswith(REMOVE) and f"{ADD}{orig_key}" not in data:
                 result.append(get_removed(messages))
-            elif key.startswith(('+ ')) and f"- {orig_key}" not in data:
+            elif key.startswith(ADD) and f"{REMOVE}{orig_key}" not in data:
                 result.append(get_added(messages))
 
         return '\n'.join(result)
