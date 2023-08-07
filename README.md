@@ -13,7 +13,7 @@
 
 ## About
 
-Difference Generator is a tool that determines the difference between two data structures. This is a popular task, for which there are many online services, such as http://www.jsondiff.com/.
+Difference Generator is a tool that determines the difference between two files (JSON and/or YAML ). This is a popular task, for which there are many online services, such as http://www.jsondiff.com/.
 
 Such a mechanism, for example, is used when outputting tests or when automatically tracking changes in configuration files.
 
@@ -231,7 +231,7 @@ JSON (JavaScript Object Notation) is a standard text format for representing str
 
 ---
 
-This is the second training project of the ["Python Developer"](https://ru.hexlet.io/programs/python) course on [Hexlet.io](https://hexlet.io)
+This is the second training Python project of the ["Python Developer"](https://ru.hexlet.io/programs/python) course on [Hexlet.io](https://hexlet.io)
 
 > GitHub [@KsyushaKI](https://github.com/KsyushaKI) &nbsp;&middot;&nbsp;
 > LinkedIn [@Oksana Karshakevich](https://www.linkedin.com/in/oksana-karshakevich/)
