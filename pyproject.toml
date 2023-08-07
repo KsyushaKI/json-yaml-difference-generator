@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "hexlet-code"
+name = "json-yaml-difference-generator"
 version = "0.1.0"
-description = "Difference calculator is a program that determines the difference between two data structures"
+description = "Difference Generator is a tool that determines the difference between two two files (JSON and/or YAML )"
 authors = ["KsyushaKI <oksanaakadem39@gmail.com>"]
 readme = "README.md"
 packages = [{include = "gendiff"}]

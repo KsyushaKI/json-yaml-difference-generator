@@ -2,7 +2,7 @@
 
 <h1>Difference Generator</h1>
 
-<p>Calculate the difference between two files</p>
+<p>Calculate the difference between two files (JSON and/or YAML )</p>
 
 [![Actions Status](https://github.com/KsyushaKI/json-yaml-difference-generator/workflows/hexlet-check/badge.svg)](https://github.com/KsyushaKI/json-yaml-difference-generator/actions)
 [![Actions Status2](https://github.com/KsyushaKI/json-yaml-difference-generator/workflows/Python%20CI/badge.svg)](https://github.com/KsyushaKI/json-yaml-difference-generator/actions)
@@ -67,13 +67,13 @@ The project uses the Poetry dependency manager. To install Poetry use its [offic
 To use the package, you need to clone the repository to your computer. This is done using the ```git clone``` command. Clone the project:
 
 ```bash
->> git clone https://github.com/venyxD/python-project-50.git
+>> git clone https://github.com/KsyushaKI/json-yaml-difference-generator.git
 ```
 
 Then you have to build the package and install it:
 
 ```bash
->> cd python-project-50
+>> cd json-yaml-difference-generator
 ```
 
 ```bash
@@ -234,4 +234,4 @@ JSON (JavaScript Object Notation) is a standard text format for representing str
 This is the second training project of the ["Python Developer"](https://ru.hexlet.io/programs/python) course on [Hexlet.io](https://hexlet.io)
 
 > GitHub [@KsyushaKI](https://github.com/KsyushaKI) &nbsp;&middot;&nbsp;
-> LinkedIn [@Oksana Karshakevich](https://www.linkedin.com/in/oksana-karshakevich-097663243/)
+> LinkedIn [@Oksana Karshakevich](https://www.linkedin.com/in/oksana-karshakevich/)
